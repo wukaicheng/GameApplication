@@ -47,4 +47,8 @@ dependencies {
 
     /*二维码框架*/
     implementation 'cn.yipianfengye.android:zxing-library:2.2'
+
+    implementation 'com.jakewharton:butterknife:10.2.3'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.3'
+
 }

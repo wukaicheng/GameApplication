@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".view.LoginActivity">
+
+    <include layout="@layout/view_toolbar" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+        <EditText
+                android:id="@+id/username"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="12dp"
+                android:hint="@string/username"
+                android:lines="1" />
+
+        <EditText
+                android:id="@+id/password"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:hint="@string/password"
+                android:lines="1" />
+
+        <EditText
+                android:id="@+id/confirm_password"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:hint="@string/confirm_password"
+                android:lines="1" />
+
+        <EditText
+                android:id="@+id/phone"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:hint="@string/phone_findPass"
+                android:lines="1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/register"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:background="@drawable/login_button_shape"
+                android:text="@string/register"
+                android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>
