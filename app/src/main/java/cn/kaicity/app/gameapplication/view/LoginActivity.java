@@ -60,6 +60,9 @@ public class LoginActivity extends BaseActivity {
         initToolbar("登录账号", v -> finish());
 
         initLoginButton();
+
+        //直接跳转去首页，方便测试
+        gotoMain();
     }
 
     private void initLoginButton() {
@@ -105,9 +108,7 @@ public class LoginActivity extends BaseActivity {
                     ToastUtil.showToast("登录失败：" + response.body().getMsg());
                 } else {
                     ToastUtil.showToast("登录成功");
-                    Intent in = new Intent(LoginActivity.this, MainActivity.class);
-                    startActivity(in);
-                    finish();
+
                 }
 
 
@@ -134,5 +135,11 @@ public class LoginActivity extends BaseActivity {
                 passwordEdit.setText(password);
             }
         }
+    }
+
+    private void gotoMain(){
+        Intent in = new Intent(LoginActivity.this, MainActivity.class);
+        startActivity(in);
+        finish();
     }
 }
